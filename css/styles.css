@@ -1,29 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
+
 body {
-    font-family: Arial;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: "Rajdhani", sans-serif;
 }
 
-p {
-    font-size: 14px;
+.header {
+    display: flex;
+    padding: 20px;
+}
+
+.corpo {
+    padding: 20px;
+}
+
+.titulo {
+    color: #ec183f;
+    margin: 23px 0 10px 0;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    font-size: 2rem;
+}
+
+.secao small {
     font-weight: bold;
-    text-align: justify;
-    line-height: 20px;
 }
 
-h1 {
-    text-transform: uppercase;
-    text-align:center;
+.secao img {
+    max-width: 1024px;
+    width: 100%;
 }
 
-h2 {
-    font-style: italic;
-    text-align: center;
+.corpo-texto {
+    margin: 10px 0 20px 0;
 }
 
-img {
+.rodape {
+    border-top: 1px solid gray;
+    padding: 20px 0;
+}
+
+.lista-rodape {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rede-social img {
+    width: 42px;
+}
+
+.menu-mobile {
     display: block;
-    margin: 0 auto 0 auto;
 }
 
-footer {
-    text-align: center;
+.menu {
+    display: none;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .corpo {
+        padding: 0;
+    }
+
+    .header {
+        padding: 0;
+    }
+}
+
+.menu-mobile>img {
+    max-width: 42px;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
 }
